@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="stylesheet" href="styles.css">
+<title>Facilities&Services</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<h1 style= "text-align:center; color: ivory; font-family: papyrus; font-size: 55px;"> Facilities and Services
+</h1>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="yoga.jpeg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="gym.jpeg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="schedule.jpeg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<hr>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+  <a href="page2.html">Facilities</a>
+  <a href="page3.html">Membership Rates</a>
+  <a href="page4.html">How to get here</a>
+
+</div>
+
+
+<h2 style="text-align:left; font-size: 40px; font-family: Timesnewroman; color: white; background-color: lightslategrey;"> 
+Gym Amenities
+</h2>
+
+<li style="font-size: 20px; color: white; font-family: courier;"> 24-hour Access </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> 24-hour Security </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Classes </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Convenient Parking </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Free Classes </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> HDTVs </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Health Plan Discounts </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Vitamins & Supplements </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Wellness Programs </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Worldwide Club Access </li>
+
+<h2 style="text-align:left; font-size: 40px; font-family: Timesnewroman; color: white; background-color: lightslategrey;"> 
+Strength & Free Weights 
+</h2>
+
+<li style="font-size: 20px; color: white; font-family: courier;"> Barbells </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Circuit/ Selectorised </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Free Weights </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Plate Loaded </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Squat Racks </li>
+
+<h2 style="text-align:left; font-size: 40px; font-family: Timesnewroman; color: white; background-color: lightslategrey;"> 
+Functional Training
+</h2>
+
+<li style="font-size: 20px; color: white; font-family: courier;"> Battle Ropes </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Bosu </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Dumbbells </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Jump Ropes </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Kettlebells </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Medicine Balls </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Multi-functional Rack </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Pylometric Boxes </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Resistance Bands </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> TRX </li>
+
+<h2 style="text-align:left; font-size: 40px; font-family: Timesnewroman; color: white; background-color: lightslategrey;"> 
+Cardio
+</h2>
+
+<li style="font-size: 20px; color: white; font-family: courier;"> Cardio TVs </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Ellitical Cross-trainers </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Exercise Cycles </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Rowing Machines </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Spin Bikes </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Treadmills </li>
+
+<h2 style="text-align:left; font-size: 40px; font-family: Timesnewroman; color: white; background-color: lightslategrey;"> 
+Training & Coaching Services
+</h2>
+
+<li style="font-size: 20px; color: white; font-family: courier;"> Fitness Assessment </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Personal Training </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Small Group Training </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Specialised Classes </li>
+
+<h2 style="text-align:left; font-size: 40px; font-family: Timesnewroman; color: white; background-color: lightslategrey;"> 
+Classes
+</h2>
+
+<li style="font-size: 20px; color: white; font-family: courier;"> Aerial Yoga </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Yoga </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Les Mills Tone </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Zumba</li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Fight Do </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> TRX Training </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> Circuit Training </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> KpopX Fitness </li>
+<li style="font-size: 20px; color: white; font-family: courier;"> BounceX </li>
+
+<br>
+<br>
+</body>
+</html>
